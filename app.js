@@ -76,21 +76,48 @@ Object.assign(translations.en, {
   thesisSubtitle: 'Word order in German and Dutch',
   redLabel: 'RED · Xiaohongshu',
   projectLabel: 'Oppwise Brasil · overseas opportunity insights',
-  languageList: 'Chinese · English · German · Dutch'
+  languageList: 'Chinese · English · German · Dutch',
+  courseLabel: 'SELECTED COURSES',
+  courseTitle: 'Methods I bring back to real questions',
+  courseHint: 'Scroll through courses ↔',
+  courseMachineTitle: 'Introduction of Machine Learning for Social Science',
+  courseMachineText: 'From regression and classification to model evaluation, learning how to use machine learning for social-science prediction while staying alert to bias and the limits of interpretation.',
+  courseLinguisticsTitle: 'Computational Linguistics',
+  courseLinguisticsText: 'Treating language as data: from text cleaning and word frequencies to the ways natural-language processing helps us understand expression, meaning and context.',
+  courseMethodsTitle: 'Research Methods in Computational Social Science',
+  courseMethodsText: 'Learning to ask testable questions, design studies, work with data and interpret results, keeping computational tools inside a rigorous research process.'
 });
 Object.assign(translations.de, {
   indexLabel: 'INDEX',
   thesisSubtitle: 'Wortstellung im Deutschen und Niederländischen',
   redLabel: 'RED · Xiaohongshu',
   projectLabel: 'Oppwise Brasil · Einblicke in Auslandschancen',
-  languageList: 'Chinesisch · Englisch · Deutsch · Niederländisch'
+  languageList: 'Chinesisch · Englisch · Deutsch · Niederländisch',
+  courseLabel: 'AUSGEWÄHLTE KURSE',
+  courseTitle: 'Methoden für konkrete Fragen',
+  courseHint: 'Kurse horizontal durchsehen ↔',
+  courseMachineTitle: 'Introduction of Machine Learning for Social Science',
+  courseMachineText: 'Von Regression und Klassifikation bis zur Modellevaluation: maschinelles Lernen für sozialwissenschaftliche Prognosen einsetzen und dabei Verzerrungen und Interpretationsgrenzen im Blick behalten.',
+  courseLinguisticsTitle: 'Computational Linguistics',
+  courseLinguisticsText: 'Sprache als Daten betrachten: von Textbereinigung und Worthäufigkeiten bis zu den Möglichkeiten der Sprachverarbeitung, Ausdruck, Bedeutung und Kontext zu verstehen.',
+  courseMethodsTitle: 'Research Methods in Computational Social Science',
+  courseMethodsText: 'Testbare Fragen formulieren, Studien entwerfen, Daten bearbeiten und Ergebnisse einordnen – mit Rechenwerkzeugen innerhalb eines sorgfältigen Forschungsprozesses.'
 });
 Object.assign(translations.nl, {
   indexLabel: 'INDEX',
   thesisSubtitle: 'Woordvolgorde in het Duits en Nederlands',
   redLabel: 'RED · Xiaohongshu',
   projectLabel: 'Oppwise Brasil · inzichten in kansen over de grens',
-  languageList: 'Chinees · Engels · Duits · Nederlands'
+  languageList: 'Chinees · Engels · Duits · Nederlands',
+  courseLabel: 'GESELECTEERDE VAKKEN',
+  courseTitle: 'Methoden voor concrete vragen',
+  courseHint: 'Scroll door de vakken ↔',
+  courseMachineTitle: 'Introduction of Machine Learning for Social Science',
+  courseMachineText: 'Van regressie en classificatie tot modelevaluatie: machine learning gebruiken voor sociaalwetenschappelijke voorspellingen, met aandacht voor vertekening en de grenzen van interpretatie.',
+  courseLinguisticsTitle: 'Computational Linguistics',
+  courseLinguisticsText: 'Taal als data bekijken: van tekst opschonen en woordfrequenties tot de manier waarop taaltechnologie helpt om uitdrukking, betekenis en context te begrijpen.',
+  courseMethodsTitle: 'Research Methods in Computational Social Science',
+  courseMethodsText: 'Toetsbare vragen formuleren, onderzoek ontwerpen, data verwerken en resultaten duiden, met computationele tools binnen een zorgvuldig onderzoeksproces.'
 });
 
 const baseTranslations = {};
