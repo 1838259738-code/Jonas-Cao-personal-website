@@ -61,10 +61,10 @@ button { color: inherit; font: inherit; }
 .hero-photo figcaption { height: 52px; padding: 8px 12px; display: flex; flex-direction: column; justify-content: center; background: var(--blue-soft); }
 .hero-photo figcaption span { color: #394154; font: 7px "DM Mono", monospace; }
 .hero-photo figcaption b { margin-top: 3px; font-size: 10px; font-weight: 600; }
-.hero-sticker { position: absolute; z-index: 6; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font: 500 8px/1.5 "DM Mono", monospace; }
+.hero-sticker { position: absolute; z-index: 6; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font: 500 9px/1.5 "DM Mono", monospace; }
 .sticker-one { top: 19%; right: 3.2vw; width: 78px; height: 78px; border: 1px solid var(--ink); border-radius: 50%; background: var(--paper); transform: rotate(8deg); }
 .sticker-two { right: 39vw; bottom: 13%; width: 75px; height: 64px; background: var(--lime); transform: rotate(-4deg); }
-.sticker-two { font-size: 22px; }
+.sticker-two { font-size: 20px; }
 .sticker-two small { margin-top: 1px; font-size: 6px; letter-spacing: .08em; }
 .orbit { display: none; }
 
@@ -88,7 +88,7 @@ button { color: inherit; font: inherit; }
 .portal-card:hover .portal-icon { transform: translateY(-5px); }
 .portal-card strong { font-size: 18px; font-weight: 600; }
 .portal-card small { margin: 6px 0 22px; color: var(--muted); font-size: 11px; line-height: 1.55; }
-.portal-card i { color: var(--muted); font: 7px "DM Mono", monospace; font-style: normal; letter-spacing: .06em; }
+.portal-card i { color: var(--muted); font: 9px "DM Mono", monospace; font-style: normal; letter-spacing: .06em; }
 .ticker { padding: 11px 0; overflow: hidden; background: var(--blue); color: white; white-space: nowrap; font: 8px "DM Mono", monospace; letter-spacing: .17em; }
 .ticker div { width: max-content; animation: ticker 30s linear infinite; }
 .ticker i { margin: 0 28px; color: var(--lime); font-style: normal; }
@@ -118,7 +118,9 @@ button { color: inherit; font: inherit; }
 .work-card:last-child { border-bottom: 1px solid rgba(255,255,255,.16); }
 .work-card:hover { padding-left: 12px; padding-right: 12px; background: rgba(255,255,255,.025); }
 .work-no { color: #707a74; font: 8px "DM Mono", monospace; }
-.work-meta { display: flex; justify-content: space-between; color: #b4bcb6; font: 12px "DM Mono", monospace; letter-spacing: .02em; }
+.work-meta { display: flex; justify-content: space-between; gap: 18px; color: #b4bcb6; font: 12px "DM Mono", monospace; letter-spacing: .02em; }
+.work-meta span:first-child { color: #f6f4ed; font-weight: 500; }
+.work-meta span { overflow-wrap: anywhere; }
 .work-meta i { font-style: normal; }
 .work h3 { margin: 15px 0; font-size: clamp(21px, 2.15vw, 30px); font-weight: 500; letter-spacing: -.035em; }
 .work-main > p { max-width: 700px; margin: 0; color: #adb4af; font-size: 13px; line-height: 1.8; }
@@ -334,8 +336,9 @@ body.lightbox-open { overflow: hidden; }
 .contact .section-index { color: #c9d5ff; }
 .contact h2 { margin: 52px 0; font-size: clamp(46px, 7.2vw, 102px); font-weight: 500; line-height: 1; letter-spacing: -.065em; }
 .contact h2 em { color: var(--lime); }
-.mail { align-self: flex-start; padding-bottom: 11px; border-bottom: 1px solid rgba(255,255,255,.55); font: clamp(15px, 1.8vw, 25px) "DM Mono", monospace; }
+.mail { align-self: flex-start; padding: 13px 16px; border: 1px solid rgba(255,255,255,.55); color: white; font: clamp(15px, 1.8vw, 25px) "DM Mono", monospace; transition: color .2s, background .2s, border-color .2s; }
 .mail span { display: inline-block; transition: transform .2s; }
+.mail:hover { color: var(--ink); border-color: var(--lime); background: var(--lime); }
 .mail:hover span { transform: translate(5px, -5px); }
 footer { margin-top: auto; padding: 23px 0; display: flex; justify-content: space-between; gap: 18px; border-top: 1px solid rgba(255,255,255,.35); font: 7px "DM Mono", monospace; }
 
@@ -402,7 +405,8 @@ footer { margin-top: auto; padding: 23px 0; display: flex; justify-content: spac
   .work-intro { margin: 38px 0 60px; }
   .work-card { display: block; }
   .work-no { margin-bottom: 15px; }
-  .work-meta { gap: 15px; }
+  .work-meta { align-items: flex-start; flex-wrap: wrap; gap: 6px 15px; line-height: 1.5; }
+  .work-meta span:last-child { color: #939c96; }
   .metric { margin-top: 20px; display: grid; grid-template-columns: auto 1fr; }
   .education { padding-top: 90px; padding-bottom: 100px; }
   .academic-intro { margin-bottom: 40px; }
@@ -448,7 +452,7 @@ footer { margin-top: auto; padding: 23px 0; display: flex; justify-content: spac
   .tile-football, .tile-language, .tile-note { min-height: 210px; }
   .contact { min-height: 72vh; }
   .contact h2 { font-size: 45px; }
-  .mail { font-size: 13px; }
+  .mail { padding: 11px 13px; font-size: 13px; }
   footer { flex-wrap: wrap; }
   .lightbox-shell { padding: 48px 12px 11px; }
   .lightbox-close { top: 10px; right: 12px; }
