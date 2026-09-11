@@ -174,19 +174,6 @@ button { color: inherit; font: inherit; }
 .thesis-details section > span { color: var(--lime); font: 7px "DM Mono", monospace; }
 .thesis-details h4 { margin: 14px 0 9px; font-size: 16px; font-weight: 600; line-height: 1.45; }
 .thesis-details p { margin: 0; color: #d2daf6; font-size: 11px; line-height: 1.8; }
-.study-grid { margin-top: 70px; display: grid; grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: repeat(2, 205px); gap: 10px; }
-.study-card { padding: 24px; position: relative; display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); background: var(--white); transition: border-radius .25s, transform .25s; }
-.study-main { grid-row: span 2; background: var(--lime); }
-.study-card:nth-child(2) { background: #d9e2f8; }
-.study-card:nth-child(3) { background: #f2d5cf; }
-.study-card:nth-child(4) { background: #dfdaf0; }
-.study-card > span { font: 7px "DM Mono", monospace; }
-.study-card h3 { margin: auto 0 9px; font-size: 21px; font-weight: 600; line-height: 1.28; letter-spacing: -.03em; }
-.study-main h3 { font-size: clamp(29px, 3.4vw, 47px); }
-.study-card p { max-width: 360px; margin: 0; color: #4e554f; font-size: 9px; line-height: 1.75; }
-.study-card > b { position: absolute; right: 18px; top: 12px; opacity: .13; font: 400 34px "DM Mono", monospace; }
-.study-card:hover { border-radius: 16px; transform: translateY(-3px); }
-
 /* Social writing */
 .social-life { min-height: 860px; padding-top: 125px; padding-bottom: 130px; display: grid; grid-template-columns: minmax(290px, .78fr) minmax(0, 1.22fr); gap: clamp(48px, 7vw, 118px); align-items: center; background: #eeeade; }
 .social-copy h2 { margin: 40px 0 25px; font-size: clamp(38px, 5vw, 72px); font-weight: 600; line-height: 1.08; letter-spacing: -.06em; }
@@ -383,8 +370,6 @@ footer { margin-top: auto; padding: 23px 0; display: flex; justify-content: spac
   .edu-list article > span { display: none; }
   .course-rail { margin-top: 48px; }
   .course-track { grid-auto-columns: minmax(280px, 72vw); }
-  .study-grid { grid-template-columns: 1fr 1fr; }
-  .study-main { grid-row: auto; grid-column: span 2; }
   .social-life { grid-template-columns: 1fr; }
   .note-gallery { margin-top: 42px; }
   .note-card { flex-basis: clamp(230px, 34vw, 285px); }
@@ -437,9 +422,6 @@ footer { margin-top: auto; padding: 23px 0; display: flex; justify-content: spac
   .field-model { grid-template-columns: 1fr; }
   .field-model div { min-height: 48px; flex-direction: row; align-items: center; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.35); }
   .thesis-details { grid-template-columns: 1fr; gap: 18px; }
-  .study-grid { display: block; }
-  .study-card { min-height: 205px; margin-bottom: 8px; }
-  .study-main { min-height: 270px; }
   .social-life { padding-top: 90px; padding-bottom: 95px; }
   .social-id { flex-wrap: wrap; }
   .copy-id { margin-left: 0; }
