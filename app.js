@@ -124,7 +124,7 @@ const baseTranslations = {};
 document.querySelectorAll('[data-i18n]').forEach(element => { baseTranslations[element.dataset.i18n] = element.innerHTML; });
 const languageNames = { zh: '中文', en: 'English', de: 'Deutsch', nl: 'Nederlands' };
 const pageMetadata = {
-  zh: { title: '曹轩鸣 · 语言与旅途之间', description: '曹轩鸣的个人数字档案：语言、研究、旅行、公开笔记与实践片段。' },
+  zh: { title: '曹轩鸣 · 语言与旅途之间', description: '曹轩鸣的个人网站：语言、研究、旅行、公开笔记与工作记录。' },
   en: { title: 'Xuanming Cao · Between Languages and Journeys', description: 'Xuanming Cao’s personal archive of languages, research, journeys, public notes and practice.' },
   de: { title: 'Xuanming Cao · Zwischen Sprachen und Reisen', description: 'Xuanming Caos persönliches Archiv: Sprachen, Forschung, Reisen, öffentliche Notizen und Praxis.' },
   nl: { title: 'Xuanming Cao · Tussen talen en reizen', description: 'Het persoonlijke archief van Xuanming Cao: talen, onderzoek, reizen, openbare notities en praktijk.' }
