@@ -35,39 +35,63 @@ const translations = {
     heroKicker:'XUANMING CAO · PERSONAL ARCHIVE',heroPlace:'SHENZHEN · 2026',heroTitle:'Across languages and journeys,<br />I learn to <span class="scribble">read the world</span><em>.</em>',heroIntro:'A collection of journeys, languages, research, practice,<br />and ideas still taking shape.',heroCaption:'Go out into the world, then bring the questions home.',
     exploreTitle:'Where would you like to begin?',exploreText:'Not a résumé arranged by time,<br />but four paths into who I am.',portalAcademic:'Study & research',portalAcademicText:'Language, society and data in conversation',portalWork:'Practice notes',portalWorkText:'Observing, collaborating and making inside real systems',portalSocial:'Public notes',portalSocialText:'Turning observations along the way into stories to share',portalLife:'Life & journeys',portalLifeText:'Football, cities and an ever-expanding world map',
     profileTitle:'Not a straight line,<br />but an <span>ever-unfolding map</span>.',profileText:'I study across German, museum studies and computational social science, and learn through product work, growth and writing. Travel teaches me to enter unfamiliar contexts, football to collaborate, and writing to turn scattered observations into answers of my own.',factWork:'years following FC Bayern',factTravel:'countries visited',factLanguage:'languages I use',mapCount:'countries visited',mapAll:'All',mapHome:'China · home base',mapList:'View all countries',
-    workTitle:'A few places where I have worked,<br />and left something concrete behind.',workIntro:'I have worked across product, growth and analysis. This is where I keep track of what I owned, and what eventually shipped and found its way into people’s hands.',honorCompany:'HONOR',didiCompany:'DIDI · IBG',meituCompany:'MEITU',vwCompany:'VOLKSWAGEN',reachCount:'2M+',viewCount:'1M+',likeCount:'24K',
-    present:'Present',honorRole:'Monetization Product Manager',honorText:'Owned six monetization requirements from problem definition and PRD to development and launch. Led browser ad-format standardization and built reusable components and interaction standards.',metricReuse:'higher code reuse',metricFeedback:'visual negative feedback',didiRole:'International Growth Operations',didiText:'Supported city launches for a food-delivery business in Brazil through segmentation, coupon incentives, omnichannel messaging and competitor monitoring; built automated analysis tools for continuous iteration.',metricReach:'targeted user touches',metricCities:'cities launched',meituRole:'AI Product Growth Operations',meituText:'Expanded overseas growth channels for Vmake and Zawa, built an AI workflow from competitor scraping to multilingual content production and distribution, and moved core keywords into Google’s top three.',metricEfficiency:'higher channel efficiency',metricRanking:'core keyword ranking',vwRole:'Project Management & Market Analysis',vwText:'Connected engineering, procurement and global suppliers to support component delivery; turned cleaned and visualized data into input for supplier and technology decisions.',metricProjects:'core projects',metricReports:'analysis reports',
+    workTitle:"Work experience &<br />professional practice",workIntro:"Experience in monetization products, international growth and market analysis, spanning requirements, strategy execution and cross-functional delivery, supported by user research, data analysis and process improvement.",honorCompany:'HONOR',didiCompany:'DIDI · IBG',meituCompany:'MEITU',vwCompany:'VOLKSWAGEN',viewCount:'1M+',likeCount:'24K',
+    present:'Present',honorRole:"Monetization Product Management Intern",honorText:"Contributed to monetization solution design, PRDs, engineering and testing coordination, and launch delivery. Worked on browser ad-format standardization, using competitor research to define visual and interaction guidelines and collaborating with UX and frontend teams on reusable components across feed, search and detail pages.",metricReuse:"Requirements and launch delivery",metricFeedback:"Ad guidelines and reusable components",didiRole:"International Growth Operations Intern",didiText:"Supported IBG FOOD city launches in Brazil through user segmentation, campaign setup, differentiated coupon strategies and A/B testing. Owned Push, email and WhatsApp outreach strategies and execution. Supported knowledge-base optimization and evaluation for a merchant acquisition AI agent, and built competitor monitoring and automated analysis tools for campaign reviews.",metricReach:"Segmentation and multichannel outreach",metricCities:"Competitor monitoring and AI agent support",meituRole:"AI Product Growth Operations Intern",meituText:"Managed overseas inbound growth and SEO for Vmake and Zawa, developing creator partnerships, media collaborations and backlinks, and supporting GEO through Reddit communities. Used prompt engineering to build workflows for competitor data collection, multilingual content generation and distribution. Analyzed search demand with GSC, GA4, Semrush and Ahrefs to optimize keywords and landing pages.",metricEfficiency:"SEO / GEO and channel partnerships",metricRanking:"AI-assisted production and distribution",vwRole:"Project Management & Market Analysis Intern",vwText:"Supported component projects by coordinating engineering, procurement and global suppliers, including commercial discussions, technical reviews and delivery tracking. Cleaned, analyzed and visualized industry and competitor data, producing market reports to inform supplier qualification and technology assessments.",metricProjects:"Cross-functional delivery tracking",metricReports:"Industry research and decision support",
     academicTitle:'From language structure<br />to the <span>data structure of society</span>.',academicIntro:'Language study trained my sensitivity to nuance and context. Computational social science taught me to test intuition with data.',cuhk:'The Chinese University of Hong Kong, Shenzhen',cuhkMajor:'MSc in Computational Social Science · Statistics concentration',lmu:'LMU Munich',lmuMajor:'Government-sponsored exchange · German as a Foreign Language',nankai:'Nankai University',nankaiMajor:'BA in German · Minor in Museum Studies',
     thesisTitle:'Word Order in German and Dutch',thesisScore:'BA thesis · linguistics',fieldPre:'Prefield',fieldLeft:'Left bracket',fieldMid:'Midfield',fieldRight:'Right bracket',fieldPost:'Postfield',thesisQuestionTitle:'One origin—why different syntactic paths?',thesisQuestion:'This study compares verb position, sentence brackets and information focus in two West Germanic languages, asking whether Dutch simplification may foreshadow future changes in German.',thesisMethodTitle:'Topological model × comparative analysis',thesisMethod:'Sentences are divided into prefield, left/right brackets, midfield and postfield to compare V2, multi-verb order, omission and bracket-breaking within one framework.',thesisFindingTitle:'A shared frame, different flexibility',thesisFinding:'Both languages follow V2 in main clauses. Dutch allows more flexible verb order and auxiliary omission in subordinate clauses; language contact has pushed it toward simpler, more VO-like structures.',
     studyThesis:'German–Dutch<br />word-order research',studyThesisText:'A linguistic investigation into how neighboring language systems organize rules, structure and expression.',studyData:'Social data visualization',studyDataText:'Using R to clean, analyze and visualize data so complex findings become readable.',studyGame:'Psychology of games',studyGameText:'Studying how mechanics, motivation and behavior connect—and reasoning back from choices to design.',studyGlobal:'Globalization studies',studyGlobalText:'Understanding platforms, markets and individuals through cross-cultural flows.',
     socialTitle:'How I turn what I find on the road<br />into <span>public notes.</span>',socialText:'Müdemann is the name I use while travelling. Routes, encounters, factories, music and postcards slowly become memories that can be shared.',redLabel:'RED · Xiaohongshu',copyId:'Copy ID',views:'total reads',likes:'total likes',connection:'from expression to connection',galleryHint:'Scroll sideways · click to enlarge ↗',note1:'A 1,600 km Iceland road trip at twenty',note2:'Inside Freitag’s Zurich factory',note3:'Kota Kinabalu to Brunei: 16 border stamps',note4:'Keeping the world on a postcard wall',note5:'Finding Cambodian rock at Angkor Wat',projectLabel:'Oppwise Brasil · overseas opportunity insights',
-    lifeTitle:'Beyond the map, <em>there is a life.</em>',lifeText:'Travel is not a checklist. It teaches me to observe and adapt in unfamiliar places, and to understand places, cultures and myself anew.',photoJournalTitle:'Moments more tangible than coordinates',photoJournalHint:'Exchange, coastlines and matchdays. Click any frame to open it.',photoSea:'Sea wind, overcast skies and birds caught in the frame',photoEsn:'An exchange in Munich—and a new circle of friends',photoBarcelona:'A sunset by the sea in Barcelona',photoAllianz:'Twelve years of support, finally at the home ground',tianjin:'Tianjin',munich:'Munich',shenzhen:'Shenzhen',brazil:'Brazil work',footballTitle:'Football is another team language',footballText:'Captain, Nankai School of Foreign Languages · FC Bayern supporter for 12 years · Matchday at Allianz Arena',languageTitle:'Living between four languages',fieldNote:'“Staying curious matters<br />more than finding the standard answer.”',contactTitle:'Want to talk about languages, products,<br />or something you noticed on the road? <em>Write to me.</em>'
+    lifeTitle:'Beyond the map, <em>there is a life.</em>',lifeText:'Travel is not a checklist. It teaches me to observe and adapt in unfamiliar places, and to understand places, cultures and myself anew.',photoJournalTitle:'Moments more tangible than coordinates',photoJournalHint:'Exchange, coastlines and matchdays. Click any frame to open it.',photoSea:'Sea wind, overcast skies and birds caught in the frame',photoEsn:'An exchange in Munich—and a new circle of friends',photoBarcelona:'A sunset by the sea in Barcelona',photoAllianz:'Twelve years of support, finally at the home ground',tianjin:'Tianjin',munich:'Munich',shenzhen:'Shenzhen',brazil:'Brazil work',footballTitle:'Football is another team language',footballText:'Captain, Nankai School of Foreign Languages · FC Bayern supporter for 12 years · Matchday at Allianz Arena',languageTitle:'Living between four languages',fieldNote:'“Staying curious matters<br />more than finding the standard answer.”',contactTitle:'Want to talk about languages, products,<br />or something you noticed on the road? <em>Let’s talk.</em>'
+    ,focusHonorA:"Product design"
+    ,focusHonorB:"Ad standards"
+    ,focusDidiA:"Growth strategy"
+    ,focusDidiB:"Operations tools"
+    ,focusMeituA:"Global growth"
+    ,focusMeituB:"Content workflows"
+    ,focusVwA:"Coordination"
+    ,focusVwB:"Market analysis"
   },
   de: {
     navExplore:'Index',navWork:'Praxis',navAcademic:'Forschung',navSocial:'Notizen',navLife:'Reisen',navContact:'Kontakt',
     heroKicker:'XUANMING CAO · PERSÖNLICHES ARCHIV',heroPlace:'SHENZHEN · 2026',heroTitle:'Zwischen Sprachen und Reisen<br />lerne ich, die <span class="scribble">Welt zu lesen</span><em>.</em>',heroIntro:'Eine Sammlung aus Reisen, Sprachen, Forschung, Praxis<br />und Ideen, die noch Gestalt annehmen.',heroCaption:'Hinausgehen – und die Fragen mit zurückbringen.',
     exploreTitle:'Wo möchtest du anfangen?',exploreText:'Kein chronologisch sortierter Lebenslauf,<br />sondern vier Wege, mich kennenzulernen.',portalAcademic:'Studium & Forschung',portalAcademicText:'Sprache, Gesellschaft und Daten im Dialog',portalWork:'Praxisnotizen',portalWorkText:'In realen Systemen beobachten, zusammenarbeiten und gestalten',portalSocial:'Öffentliche Notizen',portalSocialText:'Beobachtungen unterwegs in teilbare Geschichten verwandeln',portalLife:'Leben & Reisen',portalLifeText:'Fußball, Städte und eine stetig wachsende Weltkarte',
     profileTitle:'Keine gerade Linie,<br />sondern eine <span>Karte, die sich weiter entfaltet</span>.',profileText:'Ich bewege mich zwischen Germanistik, Museumswissenschaft und Computational Social Science und lerne ebenso durch Produktarbeit, Wachstum und Schreiben. Reisen schult mich im Umgang mit fremden Kontexten, Fußball in Zusammenarbeit und Schreiben darin, verstreute Beobachtungen zu eigenen Antworten zu ordnen.',factWork:'Jahre Bayern-Fan',factTravel:'besuchte Länder',factLanguage:'Sprachen im Alltag',mapCount:'besuchte Länder',mapAll:'Alle',mapHome:'China · Ausgangspunkt',mapList:'Alle Länder anzeigen',
-    workTitle:'Ein paar Orte, an denen ich gearbeitet<br />und etwas Konkretes hinterlassen habe.',workIntro:'Ich habe in Produkt, Wachstum und Analyse gearbeitet. Hier steht, worum ich mich gekümmert habe und was am Ende tatsächlich veröffentlicht und genutzt wurde.',honorCompany:'HONOR',didiCompany:'DIDI · IBG',meituCompany:'MEITU',vwCompany:'VOLKSWAGEN',reachCount:'2 Mio.+',viewCount:'1 Mio.+',likeCount:'24 Tsd.',
-    present:'heute',honorRole:'Produktmanager Monetarisierung',honorText:'Sechs Monetarisierungsanforderungen von Problemdefinition und PRD bis Entwicklung und Launch verantwortet. Standardisierung von Werbeformaten und wiederverwendbaren Komponenten geleitet.',metricReuse:'mehr Code-Wiederverwendung',metricFeedback:'visuelles Negativfeedback',didiRole:'International Growth Operations',didiText:'Stadtstarts eines Food-Delivery-Geschäfts in Brasilien mit Segmentierung, Coupons, Omnichannel-Kommunikation und Wettbewerbsbeobachtung unterstützt; automatisierte Analysewerkzeuge entwickelt.',metricReach:'gezielte Kontakte',metricCities:'gestartete Städte',meituRole:'AI Product Growth Operations',meituText:'Internationale Wachstumskanäle für Vmake und Zawa aufgebaut und einen KI-Workflow von Wettbewerbsdaten bis zur mehrsprachigen Content-Produktion entwickelt; zentrale Keywords in Googles Top 3 gebracht.',metricEfficiency:'höhere Effizienz',metricRanking:'Keyword-Ranking',vwRole:'Projektmanagement & Marktanalyse',vwText:'Technik, Einkauf und globale Lieferanten koordiniert; Datenanalysen und Visualisierungen als Grundlage für Lieferanten- und Technologieentscheidungen erstellt.',metricProjects:'Kernprojekte',metricReports:'Analysen',
+    workTitle:"Berufserfahrung &<br />Praxis",workIntro:"Erfahrung in Monetarisierung, internationalem Wachstum und Marktanalyse: von der Anforderungsdefinition über die Strategieumsetzung bis zur teamübergreifenden Zusammenarbeit, gestützt auf Nutzerforschung, Datenanalyse und Prozessoptimierung.",honorCompany:'HONOR',didiCompany:'DIDI · IBG',meituCompany:'MEITU',vwCompany:'VOLKSWAGEN',viewCount:'1 Mio.+',likeCount:'24 Tsd.',
+    present:'heute',honorRole:"Praktikant Produktmanagement · Monetarisierung",honorText:"Mitarbeit an Monetarisierungskonzepten, Anforderungsdokumenten sowie der Abstimmung mit Entwicklung und Qualitätssicherung bis zum Launch. Standardisierung von Browser-Werbeformaten auf Basis von Wettbewerbsanalysen; Erarbeitung visueller und interaktiver Richtlinien und Zusammenarbeit mit UX und Frontend an wiederverwendbaren Komponenten für Feed-, Such- und Detailseiten.",metricReuse:"Anforderungen und Launch-Begleitung",metricFeedback:"Richtlinien und wiederverwendbare Komponenten",didiRole:"Praktikant International Growth Operations",didiText:"Unterstützung der Stadteinführungen von IBG FOOD in Brasilien durch Nutzersegmentierung, Kampagnenkonfiguration, differenzierte Coupon-Strategien und A/B-Tests. Verantwortung für Ansprache über Push, E-Mail und WhatsApp. Mitarbeit an Wissensbasis und Evaluation eines KI-Agenten zur Händlergewinnung sowie Entwicklung von Werkzeugen für Wettbewerbsbeobachtung und automatisierte Analysen.",metricReach:"Segmentierung und kanalübergreifende Ansprache",metricCities:"Wettbewerbsanalyse und KI-Agent",meituRole:"Praktikant KI-Produktwachstum",meituText:"Verantwortung für internationales Inbound-Wachstum und SEO von Vmake und Zawa, einschließlich Creator- und Medienkooperationen, Backlinks und GEO über Reddit-Communitys. Aufbau von Abläufen zur Wettbewerbsdatenerfassung, mehrsprachigen Content-Erstellung und Distribution mittels Prompt Engineering. Analyse der Suchnachfrage mit GSC, GA4, Semrush und Ahrefs zur Optimierung von Keywords und Landingpages.",metricEfficiency:"SEO / GEO und Kanalpartnerschaften",metricRanking:"KI-gestützte Erstellung und Distribution",vwRole:"Praktikant Projektmanagement & Marktanalyse",vwText:"Unterstützung von Komponentenprojekten durch Abstimmung zwischen Technik, Einkauf und globalen Lieferanten, Begleitung von Geschäftsgesprächen und technischen Reviews sowie Nachverfolgung der Lieferung. Bereinigung, Analyse und Visualisierung von Branchen- und Wettbewerbsdaten; Marktberichte als Grundlage für Lieferantenzulassung und Technologiebewertung.",metricProjects:"Teamübergreifende Lieferbegleitung",metricReports:"Branchenforschung und Entscheidungsgrundlagen",
     academicTitle:'Von Sprachstrukturen<br />zur <span>Datenstruktur der Gesellschaft</span>.',academicIntro:'Das Sprachstudium schärfte mein Gespür für Nuancen und Kontext. Computational Social Science lehrte mich, Intuition mit Daten zu prüfen.',cuhk:'The Chinese University of Hong Kong, Shenzhen',cuhkMajor:'MSc Computational Social Science · Schwerpunkt Statistik',lmu:'Ludwig-Maximilians-Universität München',lmuMajor:'Stipendiengeförderter Austausch · Deutsch als Fremdsprache',nankai:'Nankai-Universität',nankaiMajor:'B.A. Germanistik · Nebenfach Museumswissenschaft',
     thesisTitle:'Wortstellung im Deutschen und Niederländischen',thesisScore:'Bachelorarbeit · Linguistik',fieldPre:'Vorfeld',fieldLeft:'Linke Satzklammer',fieldMid:'Mittelfeld',fieldRight:'Rechte Satzklammer',fieldPost:'Nachfeld',thesisQuestionTitle:'Ein Ursprung – warum verschiedene Syntaxwege?',thesisQuestion:'Die Arbeit vergleicht Verbstellung, Satzklammer und Informationsfokus zweier westgermanischer Sprachen und fragt, ob die Vereinfachung des Niederländischen künftige Veränderungen im Deutschen andeutet.',thesisMethodTitle:'Topologisches Modell × Vergleich',thesisMethod:'Sätze werden in Vorfeld, linke und rechte Satzklammer, Mittelfeld und Nachfeld gegliedert. So lassen sich V2, Verbcluster, Auslassung und Rahmensprengung in einem Rahmen vergleichen.',thesisFindingTitle:'Gemeinsamer Rahmen, andere Flexibilität',thesisFinding:'Beide Sprachen folgen im Hauptsatz dem V2-Prinzip. Im Nebensatz erlaubt das Niederländische flexiblere Verbfolgen und häufigere Auxiliarauslassung; Sprachkontakt fördert einfachere, VO-nahe Strukturen.',
     studyThesis:'Deutsch–Niederländisch:<br />Wortstellung',studyThesisText:'Eine linguistische Untersuchung zu Regeln, Struktur und Ausdruck benachbarter Sprachsysteme.',studyData:'Visualisierung sozialer Daten',studyDataText:'Daten mit R bereinigen, analysieren und so visualisieren, dass komplexe Befunde lesbar werden.',studyGame:'Spielpsychologie',studyGameText:'Zusammenhänge zwischen Mechanik, Motivation und Verhalten untersuchen – und von Entscheidungen auf Design schließen.',studyGlobal:'Globalisierungsforschung',studyGlobalText:'Plattformen, Märkte und Individuen im Kontext kultureller Verflechtung verstehen.',
     socialTitle:'Wie Erlebnisse unterwegs<br />zu <span>öffentlichen Notizen</span> werden.',socialText:'Müdemann ist mein Name auf Reisen. Routen, Begegnungen, Fabriken, Musik und Postkarten werden dort nach und nach zu Erinnerungen, die sich teilen lassen.',redLabel:'RED · Xiaohongshu',copyId:'ID kopieren',views:'Aufrufe gesamt',likes:'Likes gesamt',connection:'vom Ausdruck zur Verbindung',galleryHint:'Seitwärts scrollen · zum Vergrößern klicken ↗',note1:'Mit zwanzig: 1.600 km durch Island',note2:'Zu Besuch in der Freitag-Fabrik Zürich',note3:'Kota Kinabalu–Brunei: 16 Grenzstempel',note4:'Die Welt an meiner Postkartenwand',note5:'Kambodschanischen Rock in Angkor Wat finden',projectLabel:'Oppwise Brasil · Einblicke in Auslandschancen',
     lifeTitle:'Jenseits der Karte <em>liegt das Leben.</em>',lifeText:'Reisen ist keine Checkliste. In unbekannten Situationen lerne ich zu beobachten und mich anzupassen – und Orte, Kulturen und mich selbst immer neu zu verstehen.',photoJournalTitle:'Momente, die konkreter sind als Koordinaten',photoJournalHint:'Austausch, Küsten und Spieltage. Ein Klick öffnet das Bild.',photoSea:'Seewind, Wolken und Vögel, die gerade ins Bild fliegen',photoEsn:'Ein Austausch in München – und ein neuer Freundeskreis',photoBarcelona:'Ein Sonnenuntergang am Meer in Barcelona',photoAllianz:'Zwölf Jahre Fan – endlich im eigenen Stadion',tianjin:'Tianjin',munich:'München',shenzhen:'Shenzhen',brazil:'Brasilien-Projekt',footballTitle:'Fußball ist eine weitere Teamsprache',footballText:'Kapitän der Fakultätsmannschaft in Nankai · seit 12 Jahren Bayern-Fan · Spieltag in der Allianz Arena',languageTitle:'Zwischen vier Sprachen leben',fieldNote:'„Neugierig zu bleiben ist wichtiger,<br />als die Standardantwort zu finden.“',contactTitle:'Du möchtest über Sprachen, Produkte<br />oder Reisen sprechen? <em>Schreib mir.</em>'
+    ,focusHonorA:"Produktdesign"
+    ,focusHonorB:"Werbestandards"
+    ,focusDidiA:"Wachstum"
+    ,focusDidiB:"Analysetools"
+    ,focusMeituA:"Globales Wachstum"
+    ,focusMeituB:"Content-Prozesse"
+    ,focusVwA:"Koordination"
+    ,focusVwB:"Marktanalyse"
   },
   nl: {
     navExplore:'Index',navWork:'Praktijk',navAcademic:'Onderzoek',navSocial:'Notities',navLife:'Reizen',navContact:'Contact',
     heroKicker:'XUANMING CAO · PERSOONLIJK ARCHIEF',heroPlace:'SHENZHEN · 2026',heroTitle:'Tussen talen en reizen<br />leer ik de <span class="scribble">wereld lezen</span><em>.</em>',heroIntro:'Een verzameling reizen, talen, onderzoek, praktijk<br />en ideeën die nog vorm krijgen.',heroCaption:'Naar buiten gaan, en de vragen mee terugnemen.',
     exploreTitle:'Waar wil je beginnen?',exploreText:'Geen cv op volgorde van tijd,<br />maar vier routes om mij te leren kennen.',portalAcademic:'Studie & onderzoek',portalAcademicText:'Waar taal, samenleving en data elkaar ontmoeten',portalWork:'Praktijknotities',portalWorkText:'Observeren, samenwerken en maken in echte systemen',portalSocial:'Openbare notities',portalSocialText:'Observaties onderweg omzetten in verhalen om te delen',portalLife:'Leven & reizen',portalLifeText:'Voetbal, steden en een wereldkaart die blijft groeien',
     profileTitle:'Geen rechte lijn,<br />maar een <span>kaart die zich blijft ontvouwen</span>.',profileText:'Ik leer tussen Duits, museumstudies en computational social science, en evenzeer via productwerk, groei en schrijven. Reizen leert me onbekende contexten binnen te stappen, voetbal om samen te werken en schrijven om losse observaties tot eigen antwoorden te ordenen.',factWork:'jaar Bayern-supporter',factTravel:'bezochte landen',factLanguage:'talen die ik gebruik',mapCount:'bezochte landen',mapAll:'Alles',mapHome:'China · thuisbasis',mapList:'Bekijk alle landen',
-    workTitle:'Plekken waar ik heb gewerkt<br />en iets concreets heb achtergelaten.',workIntro:'Ik heb gewerkt aan product, groei en analyse. Hier staat waar ik verantwoordelijk voor was en wat uiteindelijk is uitgebracht en gebruikt.',honorCompany:'HONOR',didiCompany:'DIDI · IBG',meituCompany:'MEITU',vwCompany:'VOLKSWAGEN',reachCount:'2 mln+',viewCount:'1 mln+',likeCount:'24K',
-    present:'heden',honorRole:'Productmanager Monetisatie',honorText:'Zes monetisatievraagstukken begeleid van probleemdefinitie en PRD tot ontwikkeling en lancering. Standaardisatie van browseradvertenties en herbruikbare componenten geleid.',metricReuse:'meer codehergebruik',metricFeedback:'negatieve visuele feedback',didiRole:'International Growth Operations',didiText:'Stadsintroducties voor food delivery in Brazilië ondersteund met segmentatie, coupons, omnichannelberichten en concurrentiemonitoring; geautomatiseerde analysetools gebouwd.',metricReach:'gerichte contactmomenten',metricCities:'gelanceerde steden',meituRole:'AI Product Growth Operations',meituText:'Internationale groeikanalen voor Vmake en Zawa ontwikkeld en een AI-workflow gebouwd van concurrentiedata tot meertalige content; kernwoorden naar Googles top drie gebracht.',metricEfficiency:'hogere efficiëntie',metricRanking:'ranking kernwoorden',vwRole:'Projectmanagement & Marktanalyse',vwText:'Engineering, inkoop en wereldwijde leveranciers verbonden; data-analyse en visualisatie geleverd voor leveranciers- en technologiebeslissingen.',metricProjects:'kernprojecten',metricReports:'analyses',
+    workTitle:"Werkervaring &<br />professionele praktijk",workIntro:"Ervaring met monetisatie, internationale groei en marktanalyse: van requirements en strategie-uitvoering tot samenwerking tussen teams, ondersteund door gebruikersonderzoek, data-analyse en procesverbetering.",honorCompany:'HONOR',didiCompany:'DIDI · IBG',meituCompany:'MEITU',vwCompany:'VOLKSWAGEN',viewCount:'1 mln+',likeCount:'24K',
+    present:'heden',honorRole:"Stagiair Productmanagement · Monetisatie",honorText:"Bijgedragen aan monetisatievoorstellen, productrequirements en afstemming met ontwikkeling en testen tot aan de lancering. Browseradvertenties gestandaardiseerd op basis van concurrentieonderzoek, met visuele en interactierichtlijnen en herbruikbare componenten in samenwerking met UX en frontend voor feed-, zoek- en detailpagina’s.",metricReuse:"Requirements en lanceringen",metricFeedback:"Richtlijnen en herbruikbare componenten",didiRole:"Stagiair Internationale Groeioperaties",didiText:"Stadsintroducties van IBG FOOD in Brazilië ondersteund met gebruikerssegmentatie, campagne-inrichting, gedifferentieerde couponstrategieën en A/B-tests. Verantwoordelijk voor communicatie via push, e-mail en WhatsApp. Meegewerkt aan de kennisbank en evaluatie van een AI-agent voor het werven van ondernemers, en tools voor concurrentiemonitoring en geautomatiseerde analyse ontwikkeld.",metricReach:"Segmentatie en multichannelcommunicatie",metricCities:"Concurrentiemonitoring en AI-agent",meituRole:"Stagiair AI-productgroei",meituText:"Verantwoordelijk voor internationale inboundgroei en SEO van Vmake en Zawa, met samenwerkingen met creators en media, linkbuilding en GEO via Reddit-community’s. Met prompt engineering workflows ontwikkeld voor concurrentiedata, meertalige contentproductie en distributie. Zoekvraag geanalyseerd met GSC, GA4, Semrush en Ahrefs om zoekwoorden en landingspagina’s te optimaliseren.",metricEfficiency:"SEO / GEO en kanaalpartnerschappen",metricRanking:"AI-ondersteunde productie en distributie",vwRole:"Stagiair Projectmanagement & Marktanalyse",vwText:"Onderdelenprojecten ondersteund door afstemming tussen techniek, inkoop en internationale leveranciers, zakelijke overleggen, technische beoordelingen en het volgen van leveringen. Branche- en concurrentiedata opgeschoond, geanalyseerd en gevisualiseerd; marktrapporten opgesteld voor leverancierskwalificatie en technologiebeoordeling.",metricProjects:"Afstemming en leveringsopvolging",metricReports:"Brancheonderzoek en beslisondersteuning",
     academicTitle:'Van taalstructuur<br />naar de <span>datastructuur van de samenleving</span>.',academicIntro:'Taalstudie maakte mij gevoelig voor nuance en context. Computational social science leerde mij intuïtie met data te toetsen.',cuhk:'The Chinese University of Hong Kong, Shenzhen',cuhkMajor:'MSc Computational Social Science · specialisatie Statistiek',lmu:'LMU München',lmuMajor:'Uitwisseling met beurs · Duits als vreemde taal',nankai:'Nankai University',nankaiMajor:'BA Duits · minor Museumstudies',
     thesisTitle:'Woordvolgorde in het Duits en Nederlands',thesisScore:'Bachelorscriptie · taalkunde',fieldPre:'Voorveld',fieldLeft:'Linker zinsbeugel',fieldMid:'Middenveld',fieldRight:'Rechter zinsbeugel',fieldPost:'Naveld',thesisQuestionTitle:'Eén oorsprong—waarom andere syntactische paden?',thesisQuestion:'Het onderzoek vergelijkt werkwoordspositie, zinskader en informatiefocus in twee West-Germaanse talen en vraagt of Nederlandse vereenvoudiging toekomstige veranderingen in het Duits voorspelt.',thesisMethodTitle:'Topologisch model × vergelijking',thesisMethod:'Zinnen worden verdeeld in voorveld, linker- en rechterzinsbeugel, middenveld en naveld om V2, werkwoordclusters, weglating en zinsbeugeldoorbreking te vergelijken.',thesisFindingTitle:'Hetzelfde kader, andere flexibiliteit',thesisFinding:'Beide talen volgen V2 in hoofdzinnen. In bijzinnen kent het Nederlands flexibelere werkwoordsvolgorde en vaker weglating van hulpwerkwoorden; taalcontact stimuleert eenvoudigere, meer VO-achtige structuren.',
     studyThesis:'Duits–Nederlands:<br />woordvolgorde',studyThesisText:'Een taalkundig onderzoek naar regels, structuur en expressie in verwante taalsystemen.',studyData:'Visualisatie van sociale data',studyDataText:'Data met R opschonen, analyseren en visualiseren zodat complexe bevindingen leesbaar worden.',studyGame:'Gamepsychologie',studyGameText:'De relatie tussen mechanismen, motivatie en gedrag onderzoeken—en vanuit keuzes terugredeneren naar ontwerp.',studyGlobal:'Globaliseringsonderzoek',studyGlobalText:'Platforms, markten en individuen begrijpen via interculturele stromen.',
     socialTitle:'Hoe ik wat ik onderweg vind<br />bewaar als <span>openbare notities.</span>',socialText:'Müdemann is de naam die ik onderweg gebruik. Routes, ontmoetingen, fabrieken, muziek en ansichtkaarten worden er langzaam herinneringen die ik kan delen.',redLabel:'RED · Xiaohongshu',copyId:'ID kopiëren',views:'totaal gelezen',likes:'totale likes',connection:'van expressie naar verbinding',galleryHint:'Scroll zijwaarts · klik om te vergroten ↗',note1:'Op mijn twintigste: 1.600 km door IJsland',note2:'Binnen bij de Freitag-fabriek in Zürich',note3:'Kota Kinabalu–Brunei: 16 grensstempels',note4:'De wereld bewaren op een ansichtkaartenmuur',note5:'Cambodjaanse rock vinden bij Angkor Wat',projectLabel:'Oppwise Brasil · inzichten in kansen over de grens',
     lifeTitle:'Buiten de kaart <em>ligt het leven.</em>',lifeText:'Reizen is geen checklist. Op onbekende plekken leer ik observeren en me aanpassen, en plaatsen, culturen en mezelf steeds opnieuw te begrijpen.',photoJournalTitle:'Momenten die tastbaarder zijn dan coördinaten',photoJournalHint:'Uitwisseling, kustlijnen en wedstrijddagen. Klik op een beeld om het te openen.',photoSea:'Zeewind, bewolking en vogels die precies in beeld vliegen',photoEsn:'Een uitwisseling in München—en een nieuwe vriendenkring',photoBarcelona:'Een zonsondergang aan zee in Barcelona',photoAllianz:'Twaalf jaar support, eindelijk bij het thuisstadion',tianjin:'Tianjin',munich:'München',shenzhen:'Shenzhen',brazil:'Project Brazilië',footballTitle:'Voetbal is een andere teamtaal',footballText:'Aanvoerder, talenfaculteit Nankai · 12 jaar Bayern-supporter · wedstrijddag in de Allianz Arena',languageTitle:'Leven tussen vier talen',fieldNote:'“Nieuwsgierig blijven is belangrijker<br />dan het standaardantwoord vinden.”',contactTitle:'Als talen, steden, producten of reizen jou ook interesseren,<br /><em>stuur gerust een bericht.</em>'
+    ,focusHonorA:"Productontwerp"
+    ,focusHonorB:"Advertentienormen"
+    ,focusDidiA:"Groeistrategie"
+    ,focusDidiB:"Analysetools"
+    ,focusMeituA:"Internationale groei"
+    ,focusMeituB:"Contentprocessen"
+    ,focusVwA:"Coördinatie"
+    ,focusVwB:"Marktanalyse"
   }
 };
 
@@ -75,6 +99,21 @@ Object.assign(translations.en, {
   indexLabel: 'INDEX',
   thesisSubtitle: 'Word order in German and Dutch',
   redLabel: 'RED · Xiaohongshu',
+  featuredStories: 'Selected stories',
+  noteMedia: 'Note photos and screenshots',
+  contactChannel: 'Message me on Xiaohongshu · Müdemann',
+  storyAngkorPlace: 'Cambodia · Angkor',
+  storyAngkorTitle: 'Taking a record to Angkor to find its cover',
+  storyAngkorIntro: 'The relief on the cover of Cambodian Rocks is just to the right of an entrance across from a stone elephant.',
+  storyIcelandPlace: 'Iceland · South Coast',
+  storyIcelandTitle: 'Driving 1,600 km through Iceland at twenty',
+  storyIcelandIntro: 'Four people, five days and four nights. We picked up a car at the airport and drove along the south coast to Höfn.',
+  storyBorneoPlace: 'Borneo · Kota Kinabalu to Brunei',
+  storyBorneoTitle: 'One round trip by bus, sixteen stamps',
+  storyBorneoIntro: 'I took the bus both ways. My passport stamps trace the borders I kept crossing.',
+  storyFreitagPlace: 'Switzerland · Zurich',
+  storyFreitagTitle: 'A trip to Zurich for a factory tour',
+  storyFreitagIntro: 'A small group tour showed me how FREITAG turns used truck tarps into bags.',
   projectLabel: 'Oppwise Brasil · overseas opportunity insights',
   languageList: 'Chinese · English · German · Dutch',
   courseLabel: 'SELECTED COURSES',
@@ -91,6 +130,21 @@ Object.assign(translations.de, {
   indexLabel: 'INDEX',
   thesisSubtitle: 'Wortstellung im Deutschen und Niederländischen',
   redLabel: 'RED · Xiaohongshu',
+  featuredStories: 'Ausgewählte Geschichten',
+  noteMedia: 'Fotos und Screenshots',
+  contactChannel: 'Nachricht auf Xiaohongshu · Müdemann',
+  storyAngkorPlace: 'Kambodscha · Angkor',
+  storyAngkorTitle: 'Mit einer CD nach Angkor, auf der Suche nach ihrem Cover',
+  storyAngkorIntro: 'Das Relief vom Cover von Cambodian Rocks liegt rechts hinter einem Eingang gegenüber einem steinernen Elefanten.',
+  storyIcelandPlace: 'Island · Südküste',
+  storyIcelandTitle: 'Mit zwanzig 1.600 km durch Island',
+  storyIcelandIntro: 'Vier Leute, fünf Tage und vier Nächte. Vom Flughafen fuhren wir mit dem Mietwagen an der Südküste bis nach Höfn.',
+  storyBorneoPlace: 'Borneo · Kota Kinabalu bis Brunei',
+  storyBorneoTitle: 'Hin und zurück im Bus, sechzehn Stempel',
+  storyBorneoIntro: 'Ich fuhr in beide Richtungen mit dem Bus. Die Passstempel zeigen, welche Grenzen ich mehrmals überquerte.',
+  storyFreitagPlace: 'Schweiz · Zürich',
+  storyFreitagTitle: 'Für eine Werksführung nach Zürich',
+  storyFreitagIntro: 'Bei einer Führung in kleiner Gruppe sah ich, wie FREITAG aus gebrauchten LKW-Planen Taschen macht.',
   projectLabel: 'Oppwise Brasil · Einblicke in Auslandschancen',
   languageList: 'Chinesisch · Englisch · Deutsch · Niederländisch',
   courseLabel: 'AUSGEWÄHLTE KURSE',
@@ -107,6 +161,21 @@ Object.assign(translations.nl, {
   indexLabel: 'INDEX',
   thesisSubtitle: 'Woordvolgorde in het Duits en Nederlands',
   redLabel: 'RED · Xiaohongshu',
+  featuredStories: 'Uitgelichte verhalen',
+  noteMedia: 'Foto’s en schermafbeeldingen',
+  contactChannel: 'Bericht op Xiaohongshu · Müdemann',
+  storyAngkorPlace: 'Cambodja · Angkor',
+  storyAngkorTitle: 'Met een cd naar Angkor, op zoek naar de hoes',
+  storyAngkorIntro: 'Het reliëf op de hoes van Cambodian Rocks ligt rechts achter een ingang tegenover een stenen olifant.',
+  storyIcelandPlace: 'IJsland · Zuidkust',
+  storyIcelandTitle: 'Op mijn twintigste 1.600 km door IJsland',
+  storyIcelandIntro: 'Vier mensen, vijf dagen en vier nachten. Vanaf het vliegveld reden we langs de zuidkust naar Höfn.',
+  storyBorneoPlace: 'Borneo · Kota Kinabalu naar Brunei',
+  storyBorneoTitle: 'Eén retourrit per bus, zestien stempels',
+  storyBorneoIntro: 'Ik ging heen en terug met de bus. De paspoortstempels laten zien welke grenzen ik meerdere keren passeerde.',
+  storyFreitagPlace: 'Zwitserland · Zürich',
+  storyFreitagTitle: 'Naar Zürich voor een fabrieksrondleiding',
+  storyFreitagIntro: 'Tijdens een rondleiding in een kleine groep zag ik hoe FREITAG gebruikte vrachtwagenzeilen verwerkt tot tassen.',
   projectLabel: 'Oppwise Brasil · inzichten in kansen over de grens',
   languageList: 'Chinees · Engels · Duits · Nederlands',
   courseLabel: 'GESELECTEERDE VAKKEN',
@@ -120,52 +189,20 @@ Object.assign(translations.nl, {
   courseMethodsText: 'Toetsbare vragen formuleren, onderzoek ontwerpen, data verwerken en resultaten duiden, met computationele tools binnen een zorgvuldig onderzoeksproces.'
 });
 
-const baseTranslations = {};
-document.querySelectorAll('[data-i18n]').forEach(element => { baseTranslations[element.dataset.i18n] = element.innerHTML; });
-const languageNames = { zh: '中文', en: 'English', de: 'Deutsch', nl: 'Nederlands' };
 const pageMetadata = {
   zh: { title: '曹轩鸣 · 语言与旅途之间', description: '曹轩鸣的个人网站：语言、研究、旅行、公开笔记与工作记录。' },
   en: { title: 'Xuanming Cao · Between Languages and Journeys', description: 'Xuanming Cao’s personal archive of languages, research, journeys, public notes and practice.' },
   de: { title: 'Xuanming Cao · Zwischen Sprachen und Reisen', description: 'Xuanming Caos persönliches Archiv: Sprachen, Forschung, Reisen, öffentliche Notizen und Praxis.' },
   nl: { title: 'Xuanming Cao · Tussen talen en reizen', description: 'Het persoonlijke archief van Xuanming Cao: talen, onderzoek, reizen, openbare notities en praktijk.' }
 };
-const languagePicker = document.querySelector('.language-picker');
-const languageButton = document.querySelector('.lang');
 let currentLanguage = 'zh';
 
-function setLanguage(language) {
-  currentLanguage = language;
-  const dictionary = language === 'zh' ? baseTranslations : translations[language];
-  document.querySelectorAll('[data-i18n]').forEach(element => {
-    const value = dictionary?.[element.dataset.i18n] ?? baseTranslations[element.dataset.i18n];
-    element.innerHTML = value;
-  });
-  document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
-  document.title = pageMetadata[language].title;
-  document.querySelector('meta[name="description"]').setAttribute('content', pageMetadata[language].description);
-  document.querySelector('.current-language').textContent = languageNames[language];
-  document.querySelectorAll('.language-menu button').forEach(button => button.classList.toggle('active', button.dataset.lang === language));
-  localStorage.setItem('portfolio-language', language);
-  languagePicker.classList.remove('open');
-  languageButton.setAttribute('aria-expanded', 'false');
-  refreshTravelMapLanguage();
-}
-
-languageButton.addEventListener('click', event => {
-  event.stopPropagation();
-  const open = languagePicker.classList.toggle('open');
-  languageButton.setAttribute('aria-expanded', String(open));
-});
-document.querySelectorAll('.language-menu button').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
-document.addEventListener('click', () => {
-  languagePicker.classList.remove('open');
-  languageButton.setAttribute('aria-expanded', 'false');
-});
 document.querySelector('.copy-id').addEventListener('click', async event => {
-  await navigator.clipboard.writeText(event.currentTarget.dataset.copy);
-  const oldText = event.currentTarget.textContent;
-  event.currentTarget.textContent = document.documentElement.lang === 'zh-CN' ? '已复制 ✓' : 'Copied ✓';
-  setTimeout(() => { event.currentTarget.textContent = oldText; }, 1400);
+  const button = event.currentTarget;
+  await navigator.clipboard.writeText(button.dataset.copy);
+  const oldText = button.textContent;
+  button.textContent = document.documentElement.lang === 'zh-CN' ? '已复制 ✓' : 'Copied ✓';
+  setTimeout(() => { button.textContent = oldText; }, 1400);
 });
 
 const noteRail = document.querySelector('#noteRail');
@@ -374,4 +411,7 @@ document.addEventListener('keydown', event => {
   if (event.key === 'ArrowRight') renderLightbox(activeLightboxIndex + 1);
 });
 
-setLanguage(localStorage.getItem('portfolio-language') || 'zh');
+initializeLanguagePicker(translations, pageMetadata, language => {
+  currentLanguage = language;
+  refreshTravelMapLanguage();
+});
