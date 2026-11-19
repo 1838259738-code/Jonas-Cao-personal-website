@@ -425,6 +425,7 @@ body.lightbox-open { overflow: hidden; }
 .contact .section-index { color: #c9d5ff; }
 .contact h2 { max-width: min(100%, 36ch); margin: 24px 0 28px; font-size: var(--feature-heading-size); font-weight: 500; line-height: 1.2; letter-spacing: -.035em; text-wrap: balance; }
 .contact h2 em { color: var(--lime); }
+.contact-links { display: flex; flex-wrap: wrap; gap: 10px; }
 .contact-link { align-self: flex-start; max-width: 100%; padding: 12px 15px; border: 1px solid rgba(255,255,255,.55); color: white; font: 400 clamp(.875rem, 1.15vw, 1rem)/1.45 "DM Mono", monospace; transition: color .2s, background .2s, border-color .2s; }
 .contact-link [aria-hidden] { display: inline-block; transition: transform .2s; }
 .contact-link:hover { color: var(--ink); border-color: var(--lime); background: var(--lime); }
