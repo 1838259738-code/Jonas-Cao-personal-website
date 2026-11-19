@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&amp;family=Noto+Sans+SC:wght@300;400;500;600;700;900&amp;family=Playfair+Display:ital,wght@1,600&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=6177a80a2e" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6K86D0B568"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -21,13 +21,14 @@
   <body>
     <header class="nav">
       <a class="logo" href="#top" aria-label="返回首页"><span>XM</span><small>PERSONAL ARCHIVE</small></a>
-      <nav aria-label="主导航">
-        <a href="#explore" data-i18n="navExplore">目录</a><a href="#academic" data-i18n="navAcademic">研究</a><a href="#social" data-i18n="navSocial">公开笔记</a><a href="#life" data-i18n="navLife">旅途</a><a href="#internship" data-i18n="navWork">实践</a><a href="#contact" data-i18n="navContact">联系</a>
+      <nav id="site-navigation" aria-label="主导航" data-i18n-label="navigationLabel">
+        <a href="#explore" data-i18n="navExplore">目录</a><a href="#internship" data-i18n="navWork">实习</a><a href="#academic" data-i18n="navAcademic">研究</a><a href="#social" data-i18n="navSocial">公开笔记</a><a href="#life" data-i18n="navLife">旅途</a><a href="#contact" data-i18n="navContact">联系</a>
       </nav>
       <div class="language-picker">
-        <button class="lang" type="button" aria-haspopup="true" aria-expanded="false"><span class="current-language">中文</span>⌄</button>
-        <div class="language-menu" role="menu"><button data-lang="zh" class="active">中文 <span>CN</span></button><button data-lang="en">English <span>EN</span></button><button data-lang="de">Deutsch <span>DE</span></button><button data-lang="nl">Nederlands <span>NL</span></button></div>
+        <button class="lang" type="button" aria-expanded="false" aria-controls="site-language-options"><span class="current-language">中文</span>⌄</button>
+        <div class="language-menu" id="site-language-options"><button data-lang="zh" class="active">中文 <span>CN</span></button><button data-lang="en">English <span>EN</span></button><button data-lang="de">Deutsch <span>DE</span></button><button data-lang="nl">Nederlands <span>NL</span></button></div>
       </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span data-i18n="mobileMenu">导航</span></button>
     </header>
 
     <main id="top">
@@ -38,19 +39,19 @@
           <p data-i18n="heroIntro">我在深圳读计算社会科学硕士，做过产品和海外增长。这里也放了几篇我的旅行笔记。</p>
           <a class="round-link" href="#explore" aria-label="开始探索"><span>↓</span></a>
         </div>
-        <figure class="hero-photo reveal"><img src="./assets/hero-blue.jpg" alt="曹轩鸣在蓝色山野间旅行" /><figcaption><b data-i18n="heroCaption">旅行照片</b></figcaption></figure>
+        <figure class="hero-photo reveal"><img src="./assets/hero-blue.jpg" width="1586" height="992" fetchpriority="high" alt="曹轩鸣在蓝色山野间旅行" /><figcaption><b data-i18n="heroCaption">旅行照片</b></figcaption></figure>
         <div class="hero-sticker sticker-one" aria-hidden="true">NOTES<br />001—∞</div>
         <div class="hero-sticker sticker-two" aria-hidden="true">42<small>COUNTRIES</small></div>
         <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
       </section>
 
-      <section class="explore section" id="explore">
+      <section class="explore section" id="explore" tabindex="-1">
         <div class="explore-heading reveal"><div><p class="section-index" data-i18n="indexLabel">INDEX / 目录</p><h2 data-i18n="exploreTitle">从哪儿看起？</h2></div></div>
         <div class="portal-grid">
-          <button class="portal-card academic-card reveal" data-target="academic"><span class="portal-no">01</span><span class="portal-icon">Aa</span><strong data-i18n="portalAcademic">学术与研究</strong><small data-i18n="portalAcademicText">德语、计算社会科学和一篇语序论文</small><i>OPEN CHAPTER ↘</i></button>
-          <button class="portal-card social-card reveal" data-target="social"><span class="portal-no">02</span><span class="portal-icon">◎</span><strong data-i18n="portalSocial">公开笔记</strong><small data-i18n="portalSocialText">冰岛自驾、工厂参观和几篇小红书笔记</small><i>OPEN CHAPTER ↘</i></button>
-          <button class="portal-card life-card reveal" data-target="life"><span class="portal-no">03</span><span class="portal-icon">✦</span><strong data-i18n="portalLife">生活与旅行</strong><small data-i18n="portalLifeText">足球、城市，还有去过的地方</small><i>OPEN CHAPTER ↘</i></button>
-          <button class="portal-card internship-card reveal" data-target="internship"><span class="portal-no">04</span><span class="portal-icon">↗</span><strong data-i18n="portalWork">实习经历</strong><small data-i18n="portalWorkText">浏览器广告、外卖增长、搜索和市场分析</small><i>OPEN CHAPTER ↘</i></button>
+          <a class="portal-card academic-card reveal" href="#academic"><span class="portal-no">01</span><span class="portal-icon">Aa</span><strong data-i18n="portalAcademic">学术与研究</strong><small data-i18n="portalAcademicText">德语、计算社会科学和一篇语序论文</small><i>OPEN CHAPTER ↘</i></a>
+          <a class="portal-card social-card reveal" href="#social"><span class="portal-no">02</span><span class="portal-icon">◎</span><strong data-i18n="portalSocial">公开笔记</strong><small data-i18n="portalSocialText">冰岛自驾、工厂参观和几篇小红书笔记</small><i>OPEN CHAPTER ↘</i></a>
+          <a class="portal-card life-card reveal" href="#life"><span class="portal-no">03</span><span class="portal-icon">✦</span><strong data-i18n="portalLife">生活与旅行</strong><small data-i18n="portalLifeText">足球、城市，还有去过的地方</small><i>OPEN CHAPTER ↘</i></a>
+          <a class="portal-card internship-card reveal" href="#internship"><span class="portal-no">04</span><span class="portal-icon">↗</span><strong data-i18n="portalWork">实习经历</strong><small data-i18n="portalWorkText">浏览器广告、外卖增长、搜索和市场分析</small><i>OPEN CHAPTER ↘</i></a>
         </div>
       </section>
 
@@ -69,7 +70,24 @@
         </div>
       </section>
 
-      <section class="education section" id="academic">
+      <section class="work section" id="internship" tabindex="-1">
+        <div class="section-head reveal"><p class="section-index">02 / PRACTICE</p><p>WORK · PEOPLE · PRODUCTS</p></div>
+        <div class="work-intro reveal"><h2 data-i18n="workTitle">实习里做过的事</h2><p data-i18n="workIntro">做过浏览器广告、巴西外卖增长、海外搜索和零部件项目。下面是每段实习里我负责或参与的部分。</p></div>
+        <article class="work-card featured reveal">
+          <div class="work-no">01</div><div class="work-main"><div class="work-meta"><span data-i18n="honorCompany">荣耀 HONOR</span><span>2026.06 — <i data-i18n="present">至今</i></span></div><h3 data-i18n="honorRole">商业化产品经理实习生</h3><p data-i18n="honorText">我先对比了几款浏览器的广告，再和设计、前端一起整理信息流、搜索结果和详情页的样式，把能共用的部分做成组件。我也写过需求文档，跟过测试和上线。</p><div class="tags"><span>PRODUCT</span><span>MONETIZATION</span><span>A/B TEST</span></div></div><div class="metric"><strong data-i18n="focusHonorA">产品设计</strong><span data-i18n="metricReuse">需求方案与上线推进</span><strong data-i18n="focusHonorB">样式标准化</strong><span data-i18n="metricFeedback">广告规范与组件协作</span></div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-no">02</div><div class="work-main"><div class="work-meta"><span data-i18n="didiCompany">滴滴 DIDI · IBG</span><span>2026.02 — 2026.06</span></div><h3 data-i18n="didiRole">国际增长产品运营实习生</h3><p data-i18n="didiText">我在滴滴巴西外卖团队支持新城市上线。按用户分组配置优惠券，用 A/B 测试比较方案，也负责通过 Push、邮件和 WhatsApp 发活动消息。我做过竞品监测工具，也参与了招商 AI 助手的知识库整理和评测。</p><div class="tags"><span>BRAZIL</span><span>GROWTH</span><span>AUTOMATION</span></div></div><div class="metric"><strong data-i18n="focusDidiA">增长策略</strong><span data-i18n="metricReach">用户分层与多渠道触达</span><strong data-i18n="focusDidiB">运营工具</strong><span data-i18n="metricCities">竞品监测与 AI Agent 支持</span></div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-no">03</div><div class="work-main"><div class="work-meta"><span data-i18n="meituCompany">美图 MEITU</span><span>2025.10 — 2026.02</span></div><h3 data-i18n="meituRole">AI 产品增长运营实习生</h3><p data-i18n="meituText">我做 Vmake 和 Zawa 的海外搜索增长。用 Search Console 和 GA4 看流量，结合 Semrush、Ahrefs 找关键词，再更新落地页。我也联系过创作者和媒体，搭过多语言内容的生成和分发流程。</p><div class="tags"><span>AI</span><span>SEO / GEO</span><span>GLOBAL</span></div></div><div class="metric"><strong data-i18n="focusMeituA">海外增长</strong><span data-i18n="metricEfficiency">SEO / GEO 与渠道合作</span><strong data-i18n="focusMeituB">内容流程</strong><span data-i18n="metricRanking">AI 辅助内容生产与分发</span></div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-no">04</div><div class="work-main"><div class="work-meta"><span data-i18n="vwCompany">大众汽车 VOLKSWAGEN</span><span>2025.01 — 2025.05</span></div><h3 data-i18n="vwRole">项目管理与市场分析实习生</h3><p data-i18n="vwText">我跟进零部件项目的技术评审和交付，在技术、采购和供应商之间核对进度。我也整理行业和竞品数据，做成图表和报告，供团队评估供应商和技术路线。</p><div class="tags"><span>PROJECT</span><span>RESEARCH</span><span>DATA</span></div></div><div class="metric"><strong data-i18n="focusVwA">项目协同</strong><span data-i18n="metricProjects">跨团队沟通与交付跟进</span><strong data-i18n="focusVwB">市场分析</strong><span data-i18n="metricReports">行业研究与决策支持</span></div>
+        </article>
+      </section>
+
+      <section class="education section" id="academic" tabindex="-1">
         <div class="academic-intro reveal"><p class="section-index">03 / STUDY &amp; RESEARCH</p><h2 data-i18n="academicTitle">我学过的课，<br />和一篇<span>本科论文</span>。</h2><p data-i18n="academicIntro">这几门课主要在学怎么处理文本、用数据回答问题。本科论文做的是德语和荷兰语的语序对比。</p></div>
         <div class="edu-list">
           <article class="reveal"><time>2025 — 2027</time><h3 data-i18n="cuhk">香港中文大学（深圳）</h3><p data-i18n="cuhkMajor">计算社会科学硕士</p><span>CUHK-SHENZHEN</span></article>
@@ -87,12 +105,12 @@
         <article class="thesis-feature reveal">
           <div class="thesis-title"><span>2025 · BACHELOR THESIS</span><h3 data-i18n="thesisTitle">德语与荷兰语语序比较</h3><p data-i18n="thesisSubtitle">Wortstellung im Deutschen und Niederländischen</p><div class="thesis-score"><b>NANKAI · 2025</b><small data-i18n="thesisScore">本科论文 · 语言学</small></div></div>
           <div class="field-model" aria-label="拓扑句法模型"><div><span>VORFELD</span><b data-i18n="fieldPre">前场</b></div><div><span>LSK</span><b data-i18n="fieldLeft">左句框</b></div><div><span>MITTELFELD</span><b data-i18n="fieldMid">中场</b></div><div><span>RSK</span><b data-i18n="fieldRight">右句框</b></div><div><span>NACHFELD</span><b data-i18n="fieldPost">后场</b></div></div>
-          <div class="thesis-details"><section><span>01 / QUESTION</span><h4 data-i18n="thesisQuestionTitle">德语和荷兰语的动词放哪儿？</h4><p data-i18n="thesisQuestion">研究两种西日耳曼语言在主从句动词位置、句框结构和信息焦点上的异同，并追问荷兰语的简化是否预示德语未来的变化。</p></section><section><span>02 / METHOD</span><h4 data-i18n="thesisMethodTitle">用同一个句框模型来比</h4><p data-i18n="thesisMethod">将句子拆分为前场、左右句框、中场与后场，在统一框架内比较 V2 原则、多动词排序、成分省略和“破框”现象。</p></section><section><span>03 / FINDING</span><h4 data-i18n="thesisFindingTitle">差别主要出现在从句</h4><p data-i18n="thesisFinding">两种语言均遵循主句动词第二位原则；荷兰语从句中的动词顺序更灵活，也更常省略助动词。语言接触推动其向更简洁、VO 化的结构演进。</p></section></div>
+          <div class="thesis-details"><section><span>01 / QUESTION</span><h4 data-i18n="thesisQuestionTitle">德语和荷兰语的动词放哪儿？</h4><p data-i18n="thesisQuestion">研究两种西日耳曼语言在主从句动词位置、句框结构和信息焦点上的异同，并追问荷兰语的简化是否预示德语未来的变化。</p></section><section><span>02 / METHOD</span><h4 data-i18n="thesisMethodTitle">用同一个句框模型来比</h4><p data-i18n="thesisMethod">将句子拆分为前场、左右句框、中场与后场，在统一框架内比较 V2 原则、多动词排序、成分省略和“破框”现象。</p></section><section><span>03 / FINDING</span><h4 data-i18n="thesisFindingTitle">差别主要出现在从句</h4><p data-i18n="thesisFinding">两种语言的主句都遵循动词第二位规则。到了从句，荷兰语的动词顺序更灵活，也更常省略助动词。</p></section></div>
         </article>
       </section>
 
-      <section class="social-life section" id="social">
-        <div class="social-copy reveal"><p class="section-index">04 / PUBLIC NOTES</p><h2 data-i18n="socialTitle">路上遇到的事，<br />我会写成<span>公开笔记。</span></h2><p data-i18n="socialText">我在小红书叫 Müdemann。这里挑了几篇以前发过的笔记，有冰岛自驾，也有去吴哥找唱片封面。</p><div class="social-id" id="xiaohongshu-contact"><span data-i18n="redLabel">小红书 RED</span><b>ID 9566226604</b><button class="copy-id" data-copy="9566226604" data-i18n="copyId">复制账号</button></div><div class="social-metrics"><div><strong data-i18n="viewCount">100万+</strong><small data-i18n="views">累计阅读</small></div><div><strong data-i18n="likeCount">2.4万</strong><small data-i18n="likes">累计获赞</small></div></div></div>
+      <section class="social-life section" id="social" tabindex="-1">
+        <div class="social-copy reveal"><p class="section-index">04 / PUBLIC NOTES</p><h2 data-i18n="socialTitle">路上遇到的事，<br />我会写成<span>公开笔记。</span></h2><p data-i18n="socialText">我在小红书叫 Müdemann。这里挑了几篇以前发过的笔记，有冰岛自驾，也有去吴哥找唱片封面。</p><div class="social-id" id="xiaohongshu-contact"><span data-i18n="redLabel">小红书</span><b class="social-account">ID 9566226604</b><button class="copy-id" data-copy="9566226604" data-i18n="copyId">复制账号</button></div><p class="copy-status" role="status" hidden></p><div class="social-metrics"><div><strong data-i18n="viewCount">100万+</strong><small data-i18n="views">累计阅读</small></div><div><strong data-i18n="likeCount">2.4万</strong><small data-i18n="likes">累计获赞</small></div></div></div>
         <section class="story-shelf" aria-labelledby="featured-stories">
           <h3 id="featured-stories" data-i18n="featuredStories">精选故事</h3>
           <div class="story-grid">
@@ -135,7 +153,7 @@
           </div>
         </section>
         <div class="note-gallery reveal">
-          <div class="gallery-label"><span data-i18n="noteMedia">笔记影像</span><div class="gallery-utility"><span data-i18n="galleryHint">横向浏览 · 点击图片放大 ↗</span><div class="note-scroll-controls"><button class="note-scroll-prev" type="button" aria-label="向前浏览笔记" aria-controls="noteRail">←</button><button class="note-scroll-next" type="button" aria-label="向后浏览笔记" aria-controls="noteRail">→</button></div></div></div>
+          <div class="gallery-label"><span data-i18n="noteMedia">笔记影像</span><div class="gallery-utility"><span data-i18n="galleryHint">横向浏览 · 点击图片放大 ↗</span><div class="note-scroll-controls"><button class="note-scroll-prev" type="button" aria-label="向前浏览笔记" data-i18n-label="previousNote" aria-controls="noteRail">←</button><button class="note-scroll-next" type="button" aria-label="向后浏览笔记" data-i18n-label="nextNote" aria-controls="noteRail">→</button></div></div></div>
           <div class="note-stack" id="noteRail" aria-label="小红书精选笔记">
             <article class="note-card">
               <button class="media-trigger note-shot" type="button" data-lightbox data-full="./assets/IMG_6432.PNG" aria-label="放大查看冰岛自驾笔记截图"><img src="./assets/web/note-iceland.jpg" width="647" height="1400" loading="lazy" decoding="async" alt="小红书笔记：20 岁冰岛自驾半环岛" /><span class="media-expand" aria-hidden="true">OPEN ↗</span></button>
@@ -168,8 +186,8 @@
         </div>
       </section>
 
-      <section class="life section" id="life">
-        <div class="life-head reveal"><p class="section-index">05 / PERSONAL ATLAS</p><h2 data-i18n="lifeTitle">旅行照片和<em>去过的地方。</em></h2><p data-i18n="lifeText">下面有几张交换和旅行时拍的照片。地图可以按年份看，点一个国家就能看到我是哪年去的。</p></div>
+      <section class="life section" id="life" tabindex="-1">
+        <div class="life-head reveal"><p class="section-index">05 / PERSONAL ATLAS</p><h2 data-i18n="lifeTitle">旅行照片和<em>去过的地方。</em></h2><p data-i18n="lifeText">下面有几张交换和旅行时拍的照片。地图可以按年份看，点地图上的标记，可以看到国家和到访年份。</p></div>
         <div class="life-collage">
           <section class="photo-journal reveal" aria-labelledby="photo-journal-title">
             <div class="photo-journal-head"><div><span>FIELD NOTES / 04 FRAMES</span><h3 id="photo-journal-title" data-i18n="photoJournalTitle">几张旅行照片</h3></div><p data-i18n="photoJournalHint">点开看大图。</p></div>
@@ -188,12 +206,12 @@
               </figure>
               <figure class="photo-frame photo-allianz">
                 <button class="media-trigger" type="button" data-lightbox data-full="./assets/f85b853d897c52e4a087ac9b64f20b04.JPG" aria-label="放大查看安联球场照片"><img src="./assets/web/life-allianz.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="曹轩鸣在安联球场前手持拜仁慕尼黑围巾" /><span class="frame-no" aria-hidden="true">04 / MATCHDAY</span><span class="media-expand" aria-hidden="true">OPEN ↗</span></button>
-                <figcaption><span>ALLIANZ ARENA · 2023</span><b data-i18n="photoAllianz" data-lightbox-caption>十二年喜欢，终于抵达安联</b></figcaption>
+                <figcaption><span>ALLIANZ ARENA · 2023</span><b data-i18n="photoAllianz" data-lightbox-caption>当了十二年拜仁球迷，去安联现场看球</b></figcaption>
               </figure>
             </div>
           </section>
           <article class="life-tile tile-map reveal" id="travel-map">
-            <div class="travel-map-head"><div class="map-count"><strong>42</strong><span><b data-i18n="mapCount">个到访国家</b><small>42 DESTINATIONS + HOME BASE</small></span></div><div class="year-filters" aria-label="按年份筛选"><button class="active" data-year="all" data-i18n="mapAll">全部</button><button data-year="2023">2023 <i>10</i></button><button data-year="2024">2024 <i>25</i></button><button data-year="2025">2025 <i>4</i></button><button data-year="2026">2026 <i>3</i></button></div></div>
+            <div class="travel-map-head"><div class="map-count"><strong>42</strong><span><b data-i18n="mapCount">个到访国家</b><small>42 DESTINATIONS + HOME BASE</small></span></div><div class="year-filters" aria-label="按年份筛选"><button class="active" data-year="all" data-i18n="mapAll" aria-pressed="true">全部</button><button data-year="2023" aria-pressed="false">2023 <i>10</i></button><button data-year="2024" aria-pressed="false">2024 <i>25</i></button><button data-year="2025" aria-pressed="false">2025 <i>4</i></button><button data-year="2026" aria-pressed="false">2026 <i>3</i></button></div></div>
             <div class="map-stage"><svg class="world-map" viewBox="0 0 1000 500" role="img" aria-label="曹轩鸣旅行世界地图"><image href="./assets/world-land.svg" x="0" y="0" width="1000" height="500" /><g class="travel-dots"></g></svg><div class="map-tooltip" role="status"></div></div>
             <div class="map-footer"><div class="map-legend"><span><i class="legend-dot dot-2023"></i>2023 · 10</span><span><i class="legend-dot dot-2024"></i>2024 · 25</span><span><i class="legend-dot dot-2025"></i>2025 · 4</span><span><i class="legend-dot dot-2026"></i>2026 · 3</span><span><i class="legend-home"></i><b data-i18n="mapHome">中国 · 出发地</b></span></div><button class="country-list-toggle" aria-expanded="false"><span data-i18n="mapList">查看全部国家</span> <i>＋</i></button></div>
             <div class="country-list" hidden></div>
@@ -204,47 +222,30 @@
         </div>
       </section>
 
-      <section class="work section" id="internship">
-        <div class="section-head reveal"><p class="section-index">02 / PRACTICE</p><p>WORK · PEOPLE · PRODUCTS</p></div>
-        <div class="work-intro reveal"><h2 data-i18n="workTitle">实习里做过的事</h2><p data-i18n="workIntro">做过浏览器广告、巴西外卖增长、海外搜索和零部件项目。下面是每段实习里我负责或参与的部分。</p></div>
-        <article class="work-card featured reveal">
-          <div class="work-no">01</div><div class="work-main"><div class="work-meta"><span data-i18n="honorCompany">荣耀 HONOR</span><span>2026.06 — <i data-i18n="present">至今</i></span></div><h3 data-i18n="honorRole">商业化产品经理实习生</h3><p data-i18n="honorText">我先对比了几款浏览器的广告，再和设计、前端一起整理信息流、搜索结果和详情页的样式，把能共用的部分做成组件。我也写过需求文档，跟过测试和上线。</p><div class="tags"><span>PRODUCT</span><span>MONETIZATION</span><span>A/B TEST</span></div></div><div class="metric"><strong data-i18n="focusHonorA">产品设计</strong><span data-i18n="metricReuse">需求方案与上线推进</span><strong data-i18n="focusHonorB">样式标准化</strong><span data-i18n="metricFeedback">广告规范与组件协作</span></div>
-        </article>
-        <article class="work-card reveal">
-          <div class="work-no">02</div><div class="work-main"><div class="work-meta"><span data-i18n="didiCompany">滴滴 DIDI · IBG</span><span>2026.02 — 2026.06</span></div><h3 data-i18n="didiRole">国际增长产品运营实习生</h3><p data-i18n="didiText">我在滴滴巴西外卖团队支持新城市上线。按用户分组配置优惠券，用 A/B 测试比较方案，也负责通过 Push、邮件和 WhatsApp 发活动消息。我做过竞品监测工具，也参与了招商 AI 助手的知识库整理和评测。</p><div class="tags"><span>BRAZIL</span><span>GROWTH</span><span>AUTOMATION</span></div></div><div class="metric"><strong data-i18n="focusDidiA">增长策略</strong><span data-i18n="metricReach">用户分层与多渠道触达</span><strong data-i18n="focusDidiB">运营工具</strong><span data-i18n="metricCities">竞品监测与 AI Agent 支持</span></div>
-        </article>
-        <article class="work-card reveal">
-          <div class="work-no">03</div><div class="work-main"><div class="work-meta"><span data-i18n="meituCompany">美图 MEITU</span><span>2025.10 — 2026.02</span></div><h3 data-i18n="meituRole">AI 产品增长运营实习生</h3><p data-i18n="meituText">我做 Vmake 和 Zawa 的海外搜索增长。用 Search Console 和 GA4 看流量，结合 Semrush、Ahrefs 找关键词，再更新落地页。我也联系过创作者和媒体，搭过多语言内容的生成和分发流程。</p><div class="tags"><span>AI</span><span>SEO / GEO</span><span>GLOBAL</span></div></div><div class="metric"><strong data-i18n="focusMeituA">海外增长</strong><span data-i18n="metricEfficiency">SEO / GEO 与渠道合作</span><strong data-i18n="focusMeituB">内容流程</strong><span data-i18n="metricRanking">AI 辅助内容生产与分发</span></div>
-        </article>
-        <article class="work-card reveal">
-          <div class="work-no">04</div><div class="work-main"><div class="work-meta"><span data-i18n="vwCompany">大众汽车 VOLKSWAGEN</span><span>2025.01 — 2025.05</span></div><h3 data-i18n="vwRole">项目管理与市场分析实习生</h3><p data-i18n="vwText">我跟进零部件项目的技术评审和交付，在技术、采购和供应商之间核对进度。我也整理行业和竞品数据，做成图表和报告，供团队评估供应商和技术路线。</p><div class="tags"><span>PROJECT</span><span>RESEARCH</span><span>DATA</span></div></div><div class="metric"><strong data-i18n="focusVwA">项目协同</strong><span data-i18n="metricProjects">跨团队沟通与交付跟进</span><strong data-i18n="focusVwB">市场分析</strong><span data-i18n="metricReports">行业研究与决策支持</span></div>
-        </article>
-      </section>
-
       <section class="skills section">
         <p class="section-index reveal">06 / THINGS I USE</p>
         <div class="skill-cloud reveal"><span>SQL</span><span>Tableau</span><span>Excel</span><span>Prompt Engineering</span><span>Vibe Coding</span><span>GA4</span><span>Semrush</span><span>English</span><span>Deutsch</span><span>Nederlands</span></div>
         <a class="project-link reveal" href="https://oppwise-brasil.site" target="_blank" rel="noreferrer"><span><small>SIDE PROJECT</small><span data-i18n="projectLabel">Oppwise Brasil · 海外机会洞察工具</span></span><b>↗</b></a>
       </section>
 
-      <section class="contact section" id="contact">
+      <section class="contact section" id="contact" tabindex="-1">
         <p class="section-index reveal">07 / CONTACT</p>
-        <h2 class="reveal" data-i18n="contactTitle">想聊工作、研究或旅行，<br /><em>可以在小红书找我。</em></h2>
+        <h2 class="reveal" data-i18n="contactTitle">想聊工作、研究或旅行，<br /><em>欢迎来信或私信。</em></h2>
         <div class="contact-links reveal">
           <a class="contact-link" href="#xiaohongshu-contact"><span data-i18n="contactChannel">小红书私信 · Müdemann</span> <span aria-hidden="true">↗</span></a>
           <a class="contact-link" href="mailto:valentincao@163.com">valentincao@163.com</a>
         </div>
-        <footer><span>© 2026 XUANMING CAO</span><span>LAST UPDATED · SEP 2026</span><a href="#top">BACK TO TOP ↑</a></footer>
+        <footer><span>© 2026 XUANMING CAO</span><a href="#top" data-i18n="backToTop">回到顶部</a></footer>
       </section>
     </main>
     <dialog class="media-lightbox" id="mediaLightbox" aria-describedby="lightboxCaption">
       <div class="lightbox-shell">
-        <button class="lightbox-close" type="button" aria-label="关闭大图">×</button>
+        <button class="lightbox-close" type="button" aria-label="关闭大图" data-i18n-label="closePhoto">×</button>
         <figure><img class="lightbox-image" alt="" /><figcaption id="lightboxCaption"></figcaption></figure>
-        <div class="lightbox-bar"><span class="lightbox-count" aria-live="polite"></span><div class="lightbox-nav"><button class="lightbox-prev" type="button" aria-label="上一张">←</button><button class="lightbox-next" type="button" aria-label="下一张">→</button></div></div>
+        <div class="lightbox-bar"><span class="lightbox-count" aria-live="polite"></span><div class="lightbox-nav"><button class="lightbox-prev" type="button" aria-label="上一张" data-i18n-label="previousPhoto">←</button><button class="lightbox-next" type="button" aria-label="下一张" data-i18n-label="nextPhoto">→</button></div></div>
       </div>
     </dialog>
-    <script src="./language.js"></script>
-    <script src="./app.js"></script>
+    <script src="./language.js?v=6177a80a2e"></script>
+    <script src="./app.js?v=6177a80a2e"></script>
   </body>
 </html>

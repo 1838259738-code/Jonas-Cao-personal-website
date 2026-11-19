@@ -9,6 +9,11 @@ function initializeLanguagePicker(translations, pageMetadata = {}, onLanguageCha
     key: element.dataset.i18n,
     original: element.innerHTML
   }));
+  const localizedLabels = [...document.querySelectorAll('[data-i18n-label]')].map(element => ({
+    element,
+    key: element.dataset.i18nLabel,
+    original: element.getAttribute('aria-label')
+  }));
   const description = document.querySelector('meta[name="description"]');
   const originalMetadata = { title: document.title, description: description.content };
 
@@ -22,13 +27,24 @@ function initializeLanguagePicker(translations, pageMetadata = {}, onLanguageCha
     localizedElements.forEach(({ element, key, original }) => {
       element.innerHTML = dictionary?.[key] ?? original;
     });
+    localizedLabels.forEach(({ element, key, original }) => {
+      element.setAttribute('aria-label', dictionary?.[key] ?? original);
+    });
     document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
     const metadata = pageMetadata[language] ?? originalMetadata;
     document.title = metadata.title;
     description.content = metadata.description;
     current.textContent = languageNames[language];
-    options.forEach(option => option.classList.toggle('active', option.dataset.lang === language));
-    localStorage.setItem('portfolio-language', language);
+    options.forEach(option => {
+      const selected = option.dataset.lang === language;
+      option.classList.toggle('active', selected);
+      option.setAttribute('aria-pressed', String(selected));
+    });
+    try {
+      localStorage.setItem('portfolio-language', language);
+    } catch {
+      // The picker still works in browsers that restrict storage.
+    }
     setMenuOpen(false);
     onLanguageChange?.(language);
   }
@@ -48,6 +64,11 @@ function initializeLanguagePicker(translations, pageMetadata = {}, onLanguageCha
     }
   });
 
-  const savedLanguage = localStorage.getItem('portfolio-language');
+  let savedLanguage;
+  try {
+    savedLanguage = localStorage.getItem('portfolio-language');
+  } catch {
+    savedLanguage = 'zh';
+  }
   setLanguage(options.some(option => option.dataset.lang === savedLanguage) ? savedLanguage : 'zh');
 }
