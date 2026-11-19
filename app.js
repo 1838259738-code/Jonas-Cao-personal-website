@@ -293,8 +293,8 @@ function countryName(country) {
   return country.names[currentLanguage] || country.names.en;
 }
 
-function showMapTooltip(country, node) {
-  const dotRect = node.querySelector('.core').getBoundingClientRect();
+function showMapTooltip(country, hitArea) {
+  const dotRect = hitArea.getBoundingClientRect();
   const stageRect = mapStage.getBoundingClientRect();
   mapTooltip.innerHTML = `<b>${countryName(country)}</b><span>${country.year === 'home' ? 'HOME BASE' : country.year}</span>`;
   mapTooltip.style.left = `${dotRect.left - stageRect.left + dotRect.width / 2}px`;
@@ -320,8 +320,8 @@ function createMapDot(country) {
   core.setAttribute('r', country.year === 'home' ? '5.2' : '4.1');
   core.setAttribute('class', 'core');
   group.append(hitArea, pulse, core);
-  group.addEventListener('mouseenter', () => showMapTooltip(country, group));
-  group.addEventListener('focus', () => showMapTooltip(country, group));
+  group.addEventListener('mouseenter', () => showMapTooltip(country, hitArea));
+  group.addEventListener('focus', () => showMapTooltip(country, hitArea));
   group.addEventListener('mouseleave', () => mapTooltip.classList.remove('visible'));
   group.addEventListener('blur', () => mapTooltip.classList.remove('visible'));
   dotLayer.append(group);

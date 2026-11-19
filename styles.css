@@ -343,10 +343,13 @@ button { color: inherit; font: inherit; }
 .year-filters button:hover, .year-filters button.active { color: var(--ink); border-color: var(--lime); background: var(--lime); }
 .map-stage { width: 100%; margin: 4px 0 -5px; position: relative; }
 .world-map { width: 100%; height: auto; display: block; overflow: visible; }
-.travel-dot { cursor: pointer; transform-box: fill-box; transform-origin: center; transition: opacity .25s, transform .25s; }
-.travel-dot:hover, .travel-dot:focus { outline: none; transform: scale(1.9); }
+.travel-dot { cursor: pointer; transition: opacity .25s; }
+.travel-dot:focus { outline: none; }
 .travel-dot.dimmed { opacity: .07; pointer-events: none; }
-.travel-dot .pulse { opacity: 0; fill: currentColor; transform: scale(.8); transform-box: fill-box; transform-origin: center; transition: opacity .2s, transform .2s; }
+.travel-dot .core, .travel-dot .pulse { pointer-events: none; transform-box: fill-box; transform-origin: center; }
+.travel-dot .core { transition: transform .25s; }
+.travel-dot:hover .core, .travel-dot:focus .core { transform: scale(1.9); }
+.travel-dot .pulse { opacity: 0; fill: currentColor; transform: scale(.8); transition: opacity .2s, transform .2s; }
 .travel-dot:hover .pulse, .travel-dot:focus .pulse { opacity: .22; transform: scale(2.1); }
 .travel-dot[data-year="2023"] { color: var(--red); }
 .travel-dot[data-year="2023"] .core, .dot-2023 { fill: var(--red); background: var(--red); }
